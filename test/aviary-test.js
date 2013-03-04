@@ -15,15 +15,46 @@ function test() {
 
 	var aviary = new Aviary(key, secret);
 
-	console.log(aviary);
+	//console.log(aviary);
+
+	var job_id = '';
+
+	// https://github.com/AviaryInc/Feather/blob/master/src/js/controlswidget.js
+
+	aviary.renderAndWait({
+		url: url,
+		action_list: action_list,
+		success: function(url) {
+			debug(url);
+		},
+		error: function(error) {
+			debug(error);
+		}
+	});
+
+	/*
 
 	aviary.render(url, action_list, 
+		function(resp) {
+			debug(resp);
+			job_id = resp.id;
+
+			aviary.getStatus(job_id, function(resp) {console.log(resp)}, function(error) {});
+		},
+		function(err) {
+			debug(err);
+		});
+
+	*/
+	/*
+	aviary.getStatus('11', 
 		function(resp) {
 			debug(resp);
 		},
 		function(err) {
 			debug(err);
-		});
+		})
+	*/
 }
 
 test();
