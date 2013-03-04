@@ -1,0 +1,27 @@
+{
+  "author": "Aviary <api@aviary.com> (aviary.com)",
+  "contributors": [
+    "Ari Fuchs <ari@aviary.com>"
+  ],
+  "name": "aviary",
+  "description": "A NodeJS implementation of the Aviary Server-side Render Api.",
+  "version": "0.1.0",
+  "homepage": "aviary.com",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AviaryInc/aviary-nodejs.git"
+  },
+  "engines": {
+    "node": ">= 0.4.7"
+  },
+  "dependencies": {
+    "node-uuid": ">=1.4.0",
+    "querystring": "*",
+    "crypto": "*"
+  },
+
+  "scripts": {
+  
+  },
+  "optionalDependencies": {}
+}
