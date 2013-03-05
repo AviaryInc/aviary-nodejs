@@ -20,7 +20,7 @@ Right now the Aviary Render API is limited to Enterprise partners. Please contac
 
 	var renderConfig = {
 		url: '<image url>',
-		actionList: '<actionlist'
+		actionList: <actionlist>
 	};
 
 	var callback = function(error, url) {
