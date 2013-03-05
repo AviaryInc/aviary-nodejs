@@ -3,4 +3,4 @@ var config = {
 	apiSecret: '<api_secret>'
 }
 
-module.exports = config
+module.exports = config;

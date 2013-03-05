@@ -1,0 +1,4 @@
+--require chai 
+--reporter spec 
+--compilers coffee:coffee-script
+--timeout 20000

@@ -1,6 +1,8 @@
 var Aviary = require('../lib/aviary');
 var config = require('./config');
 
+//return;
+
 function debug(msg) {
 	console.log(msg);
 }
@@ -22,15 +24,13 @@ function test() {
 	// https://github.com/AviaryInc/Feather/blob/master/src/js/controlswidget.js
 
 	aviary.renderAndWait({
-		url: url,
-		action_list: action_list,
-		success: function(url) {
-			debug(url);
+			url: url,
+			actionList: action_list
 		},
-		error: function(error) {
+		function(error, url) {
 			debug(error);
-		}
-	});
+			debug(url);
+		});
 
 	/*
 
